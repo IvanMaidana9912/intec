@@ -1,6 +1,7 @@
 # intec
 Refrigeracion
 
+npm i
 
 cd intec
 
