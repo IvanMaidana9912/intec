@@ -1,10 +1,13 @@
 'use client';
 
 import { useState, type ReactElement } from 'react';
-import { projects } from '@/data/site-content';
-import type { Project } from '@/types/site';
+import type { NonEmptyReadonlyArray, Project } from "@/types/site";
 
-export default function ProjectCarousel(): ReactElement {
+interface ProjectCarouselProps {
+	readonly projects: NonEmptyReadonlyArray<Project>;
+}
+
+export default function ProjectCarousel({ projects }: ProjectCarouselProps): ReactElement {
 	const [activeIndex, setActiveIndex] = useState<number>(0);
 	const activeProject: Project = projects[activeIndex] ?? projects[0];
 
