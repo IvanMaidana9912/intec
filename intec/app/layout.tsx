@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
+import type { ReactElement, ReactNode } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -19,7 +19,11 @@ export const metadata: Metadata = {
     "Integramos tecnología, automatización y energía para crear edificios e instalaciones más inteligentes y eficientes.",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+interface RootLayoutProps {
+  readonly children: ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps): ReactElement {
   return (
     <html
       lang="es-419"
