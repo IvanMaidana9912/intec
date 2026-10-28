@@ -1,4 +1,4 @@
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export default function Approach(): ReactElement {
 	return (
@@ -14,9 +14,9 @@ export default function Approach(): ReactElement {
 				</h2>
 				<div className="approach-detail">
 					<p>
-						Partimos de cómo las personas viven y trabajan. Después conectamos
-						los sistemas, los datos y la experiencia para convertir complejidad
-						en progreso tangible.
+						Partimos de cómo las personas viven y trabajan. Después conectamos los
+						sistemas, los datos y la experiencia para convertir complejidad en
+						progreso tangible.
 					</p>
 					<a className="text-link" href="#contacto">
 						Conoce nuestro enfoque <span aria-hidden="true">↗</span>

@@ -1,5 +1,5 @@
-import type { ReactElement } from "react";
-import type { ImpactArea } from "@/types/site";
+import type { ReactElement } from 'react';
+import type { ImpactArea } from '@/types/site';
 
 interface ImpactStripProps {
 	readonly areas: readonly ImpactArea[];

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, type ReactElement } from 'react';
-import type { NonEmptyReadonlyArray, Project } from "@/types/site";
+import type { NonEmptyReadonlyArray, Project } from '@/types/site';
 
 interface ProjectCarouselProps {
 	readonly projects: NonEmptyReadonlyArray<Project>;

@@ -1,5 +1,5 @@
-import type { ReactElement } from "react";
-import type { Sector } from "@/types/site";
+import type { ReactElement } from 'react';
+import type { Sector } from '@/types/site';
 
 interface SectorsProps {
 	readonly sectors: readonly Sector[];

@@ -1,5 +1,5 @@
-import type { ReactElement } from "react";
-import type { Perspective } from "@/types/site";
+import type { ReactElement } from 'react';
+import type { Perspective } from '@/types/site';
 
 interface PerspectivesProps {
 	readonly perspectives: readonly Perspective[];
@@ -7,9 +7,7 @@ interface PerspectivesProps {
 
 export default function Perspectives({ perspectives }: PerspectivesProps): ReactElement {
 	return (
-		<section
-			className="perspectives section-wrap"
-			aria-labelledby="perspectives-heading">
+		<section className="perspectives section-wrap" aria-labelledby="perspectives-heading">
 			<div className="section-heading">
 				<div>
 					<p className="eyebrow eyebrow--dark">

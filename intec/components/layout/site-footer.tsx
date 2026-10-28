@@ -1,5 +1,5 @@
-import type { ReactElement } from "react";
-import type { NavigationLink } from "@/types/site";
+import type { ReactElement } from 'react';
+import type { NavigationLink } from '@/types/site';
 
 interface SiteFooterProps {
 	readonly links: readonly NavigationLink[];
