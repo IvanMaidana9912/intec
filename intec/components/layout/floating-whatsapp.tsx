@@ -8,7 +8,8 @@ export default function FloatingWhatsApp(): ReactElement {
 	const rawNumber: string = process.env.WHATSAPP_NUMBER ?? '';
 	const phoneNumber: string = rawNumber.replace(/\D/g, '');
 	const isValidNumber: boolean = /^\d{8,15}$/.test(phoneNumber);
-	const message: string = 'Hola, quisiera consultar por los servicios de INTEC.';
+	const message: string =
+		process.env.WHATSAPP_TEXT ?? 'Hola, quisiera consultar por los servicios de INTEC';
 	const whatsAppUrl: string | null = isValidNumber
 		? `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
 		: null;
